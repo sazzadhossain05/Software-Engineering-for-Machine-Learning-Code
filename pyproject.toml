@@ -1,0 +1,35 @@
+[project]
+name = "se4ml-thesis"
+version = "1.0.0"
+description = "Engineering Intelligence: SE4ML Cross-Framework Analysis"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Sazzad Hossain", email = "sazzad.hossain.cs@gmail.com"}
+]
+keywords = ["SE4ML", "MLOps", "software-engineering", "machine-learning", "framework-comparison"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks integration tests",
+]
+
+[tool.pylint.messages_control]
+disable = ["C0114", "C0115", "C0116", "R0903"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
