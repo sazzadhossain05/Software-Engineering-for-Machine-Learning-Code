@@ -1,0 +1,10 @@
+# Development and analysis tools
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.7.0
+isort>=5.12.0
+flake8>=6.1.0
+pylint>=3.0.0
+radon>=6.0.1
+mypy>=1.5.0
+pre-commit>=3.4.0
