@@ -1,0 +1,26 @@
+task: regression
+framework: numpy
+
+data:
+  name: california_housing
+  root: ./data
+  val_split: 0.1
+
+model:
+  name: mlp
+  hidden_sizes: [64, 32]
+
+training:
+  batch_size: 128
+  epochs: 100
+  learning_rate: 0.001
+  optimizer: adam
+  weight_decay: 0.0
+  seed: 42
+
+logging:
+  experiment_name: regression_numpy
+  run_name: null
+  log_every_n_steps: 100
+  save_model: true
+  model_dir: ./models
