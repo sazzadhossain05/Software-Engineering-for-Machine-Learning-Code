@@ -1,0 +1,42 @@
+stages:
+  train_numpy_cifar10:
+    cmd: python -m src.numpy_impl.train --config configs/cifar10_numpy.yaml
+    deps:
+      - src/numpy_impl/
+      - src/common/
+      - configs/cifar10_numpy.yaml
+    metrics:
+      - results/numpy_cifar10_metrics.json:
+          cache: false
+
+  train_pytorch_cifar10:
+    cmd: python -m src.pytorch_impl.train --config configs/cifar10_pytorch.yaml
+    deps:
+      - src/pytorch_impl/
+      - src/common/
+      - configs/cifar10_pytorch.yaml
+    metrics:
+      - results/pytorch_cifar10_metrics.json:
+          cache: false
+
+  train_tf_cifar10:
+    cmd: python -m src.tensorflow_impl.train --config configs/cifar10_tensorflow.yaml
+    deps:
+      - src/tensorflow_impl/
+      - src/common/
+      - configs/cifar10_tensorflow.yaml
+    metrics:
+      - results/tf_cifar10_metrics.json:
+          cache: false
+
+  analyze:
+    cmd: make analyze
+    deps:
+      - src/
+    plots:
+      - results/numpy_complexity.json:
+          cache: false
+      - results/pytorch_complexity.json:
+          cache: false
+      - results/tensorflow_complexity.json:
+          cache: false
