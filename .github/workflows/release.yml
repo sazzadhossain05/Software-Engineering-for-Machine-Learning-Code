@@ -1,0 +1,20 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: pip install -r requirements/base.txt -r requirements/dev.txt
+      - run: pytest tests/ -v -m "not slow"
+      - run: radon cc src/ -a -j > results/complexity_report.json
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: results/complexity_report.json

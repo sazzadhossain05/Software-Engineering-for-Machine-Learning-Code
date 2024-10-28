@@ -1,0 +1,32 @@
+name: Training Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Task to train (cifar10, sentiment, regression)"
+        required: true
+        default: "regression"
+      framework:
+        description: "Framework (numpy, pytorch, tensorflow)"
+        required: true
+        default: "pytorch"
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: pip install -r requirements/base.txt -r requirements/${{ github.event.inputs.framework }}.txt
+      - run: |
+          python -m src.${{ github.event.inputs.framework }}_impl.train \
+            --config configs/${{ github.event.inputs.task }}_${{ github.event.inputs.framework }}.yaml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: training-results
+          path: |
+            mlruns/
+            models/
