@@ -110,7 +110,7 @@ def train(config: ExperimentConfig) -> dict:
     # Save model
     if config.logging.save_model:
         save_path = f"{config.logging.model_dir}/{config.task}_tensorflow"
-        model.save(save_path)
+        model.save(save_path + ".keras")
 
     print(f"\nTest Results: {test_metrics}")
     end_run()
