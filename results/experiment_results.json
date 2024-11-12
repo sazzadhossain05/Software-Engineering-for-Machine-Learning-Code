@@ -1,0 +1,17 @@
+{
+  "numpy": {
+    "regression_r2": 0.781,
+    "cifar10_acc": 0.568,
+    "sentiment_acc": 0.5
+  },
+  "pytorch": {
+    "regression_r2": 0.784,
+    "cifar10_acc": 0.704,
+    "sentiment_acc": 0.503
+  },
+  "tensorflow": {
+    "regression_r2": 0.795,
+    "cifar10_acc": 0.686,
+    "sentiment_acc": 0.837
+  }
+}
