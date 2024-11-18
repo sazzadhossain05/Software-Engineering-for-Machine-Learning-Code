@@ -1,0 +1,1548 @@
+{
+  "target": "src",
+  "cyclomatic_complexity": [
+    {
+      "file": "src\\analysis\\code_metrics.py",
+      "name": "measure_file_metrics",
+      "type": "function",
+      "complexity": 15,
+      "rank": "C",
+      "lineno": 56
+    },
+    {
+      "file": "src\\analysis\\code_metrics.py",
+      "name": "count_api_calls",
+      "type": "function",
+      "complexity": 8,
+      "rank": "B",
+      "lineno": 16
+    },
+    {
+      "file": "src\\analysis\\code_metrics.py",
+      "name": "analyze_directory",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 109
+    },
+    {
+      "file": "src\\analysis\\complexity_analysis.py",
+      "name": "run_full_analysis",
+      "type": "function",
+      "complexity": 8,
+      "rank": "B",
+      "lineno": 115
+    },
+    {
+      "file": "src\\analysis\\complexity_analysis.py",
+      "name": "analyze_cyclomatic_complexity",
+      "type": "function",
+      "complexity": 6,
+      "rank": "B",
+      "lineno": 20
+    },
+    {
+      "file": "src\\analysis\\complexity_analysis.py",
+      "name": "analyze_maintainability_index",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 55
+    },
+    {
+      "file": "src\\analysis\\complexity_analysis.py",
+      "name": "analyze_raw_metrics",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 83
+    },
+    {
+      "file": "src\\analysis\\test_coverage_report.py",
+      "name": "run_coverage_for_module",
+      "type": "function",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 11
+    },
+    {
+      "file": "src\\analysis\\visualization.py",
+      "name": "create_radar_chart",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 17
+    },
+    {
+      "file": "src\\analysis\\visualization.py",
+      "name": "create_bar_comparison",
+      "type": "function",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 53
+    },
+    {
+      "file": "src\\common\\config.py",
+      "name": "_merge_dataclass",
+      "type": "function",
+      "complexity": 5,
+      "rank": "A",
+      "lineno": 80
+    },
+    {
+      "file": "src\\common\\config.py",
+      "name": "load_config",
+      "type": "function",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 91
+    },
+    {
+      "file": "src\\common\\config.py",
+      "name": "parse_args",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 116
+    },
+    {
+      "file": "src\\common\\config.py",
+      "name": "DataConfig",
+      "type": "class",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 24
+    },
+    {
+      "file": "src\\common\\config.py",
+      "name": "ModelConfig",
+      "type": "class",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 35
+    },
+    {
+      "file": "src\\common\\config.py",
+      "name": "TrainingConfig",
+      "type": "class",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 46
+    },
+    {
+      "file": "src\\common\\config.py",
+      "name": "LoggingConfig",
+      "type": "class",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 58
+    },
+    {
+      "file": "src\\common\\config.py",
+      "name": "ExperimentConfig",
+      "type": "class",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 69
+    },
+    {
+      "file": "src\\common\\data_loader.py",
+      "name": "load_imdb_sentiment",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 88
+    },
+    {
+      "file": "src\\common\\data_loader.py",
+      "name": "load_cifar10",
+      "type": "function",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 27
+    },
+    {
+      "file": "src\\common\\data_loader.py",
+      "name": "load_dataset",
+      "type": "function",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 210
+    },
+    {
+      "file": "src\\common\\data_loader.py",
+      "name": "load_california_housing",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 164
+    },
+    {
+      "file": "src\\common\\logging_utils.py",
+      "name": "log_epoch_metrics",
+      "type": "function",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 57
+    },
+    {
+      "file": "src\\common\\logging_utils.py",
+      "name": "log_final_results",
+      "type": "function",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 68
+    },
+    {
+      "file": "src\\common\\logging_utils.py",
+      "name": "setup_experiment",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 24
+    },
+    {
+      "file": "src\\common\\logging_utils.py",
+      "name": "log_artifact_file",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 78
+    },
+    {
+      "file": "src\\common\\logging_utils.py",
+      "name": "end_run",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 87
+    },
+    {
+      "file": "src\\common\\metrics.py",
+      "name": "compute_task_metrics",
+      "type": "function",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 74
+    },
+    {
+      "file": "src\\common\\metrics.py",
+      "name": "compute_accuracy",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 19
+    },
+    {
+      "file": "src\\common\\metrics.py",
+      "name": "compute_f1",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 32
+    },
+    {
+      "file": "src\\common\\metrics.py",
+      "name": "compute_rmse",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 48
+    },
+    {
+      "file": "src\\common\\metrics.py",
+      "name": "compute_r2",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 61
+    },
+    {
+      "file": "src\\common\\reproducibility.py",
+      "name": "set_global_seed",
+      "type": "function",
+      "complexity": 6,
+      "rank": "B",
+      "lineno": 24
+    },
+    {
+      "file": "src\\common\\reproducibility.py",
+      "name": "get_seed_info",
+      "type": "function",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 76
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "_im2col",
+      "type": "method",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 141
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "MaxPool2D",
+      "type": "class",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 194
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 208
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "Layer",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 23
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "Linear",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 37
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "ReLU",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 73
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "Sigmoid",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 87
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "Conv2D",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 101
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "Flatten",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 229
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "Embedding",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 243
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 26
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 29
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "parameters",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 32
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 46
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 57
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 61
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "parameters",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 66
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 76
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 79
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 83
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 90
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 93
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 97
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 113
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 160
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 172
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "parameters",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 187
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 202
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 224
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 232
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 235
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 239
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 252
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 258
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 263
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "name": "parameters",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 268
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "step",
+      "type": "method",
+      "complexity": 6,
+      "rank": "B",
+      "lineno": 40
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "SGD",
+      "type": "class",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 17
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "Adam",
+      "type": "class",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 69
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "step",
+      "type": "method",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 102
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 81
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "create_optimizer",
+      "type": "function",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 134
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "zero_grad",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 63
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "zero_grad",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 128
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 27
+    },
+    {
+      "file": "src\\numpy_impl\\train.py",
+      "name": "_create_model",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 26
+    },
+    {
+      "file": "src\\numpy_impl\\train.py",
+      "name": "train",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 86
+    },
+    {
+      "file": "src\\numpy_impl\\train.py",
+      "name": "_batch_iterator",
+      "type": "function",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 56
+    },
+    {
+      "file": "src\\numpy_impl\\train.py",
+      "name": "_get_predictions",
+      "type": "function",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 76
+    },
+    {
+      "file": "src\\numpy_impl\\train.py",
+      "name": "_prepare_input",
+      "type": "function",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 68
+    },
+    {
+      "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+      "name": "NumpyCNNCifar10",
+      "type": "class",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 20
+    },
+    {
+      "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 48
+    },
+    {
+      "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 62
+    },
+    {
+      "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+      "name": "parameters",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 72
+    },
+    {
+      "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+      "name": "cross_entropy_loss",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 80
+    },
+    {
+      "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 27
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "LSTMCell",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 21
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 75
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "NumpyLSTMSentiment",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 108
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "binary_cross_entropy_loss",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 155
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 30
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "forward_step",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 44
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "_sigmoid",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 72
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 93
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "parameters",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 100
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 115
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 127
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 142
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "name": "parameters",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 147
+    },
+    {
+      "file": "src\\numpy_impl\\models\\mlp_regression.py",
+      "name": "NumpyMLPRegression",
+      "type": "class",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 19
+    },
+    {
+      "file": "src\\numpy_impl\\models\\mlp_regression.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 26
+    },
+    {
+      "file": "src\\numpy_impl\\models\\mlp_regression.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 38
+    },
+    {
+      "file": "src\\numpy_impl\\models\\mlp_regression.py",
+      "name": "backward",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 43
+    },
+    {
+      "file": "src\\numpy_impl\\models\\mlp_regression.py",
+      "name": "parameters",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 48
+    },
+    {
+      "file": "src\\numpy_impl\\models\\mlp_regression.py",
+      "name": "mse_loss",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 55
+    },
+    {
+      "file": "src\\pytorch_impl\\datasets.py",
+      "name": "numpy_to_tensor_dataset",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 15
+    },
+    {
+      "file": "src\\pytorch_impl\\datasets.py",
+      "name": "create_dataloaders",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 44
+    },
+    {
+      "file": "src\\pytorch_impl\\train.py",
+      "name": "train",
+      "type": "function",
+      "complexity": 8,
+      "rank": "B",
+      "lineno": 65
+    },
+    {
+      "file": "src\\pytorch_impl\\train.py",
+      "name": "_create_model_and_criterion",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 29
+    },
+    {
+      "file": "src\\pytorch_impl\\train.py",
+      "name": "_get_predictions",
+      "type": "function",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 54
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\cnn_cifar10.py",
+      "name": "PyTorchCNNCifar10",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 16
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\cnn_cifar10.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 19
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\cnn_cifar10.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 42
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\lstm_sentiment.py",
+      "name": "PyTorchLSTMSentiment",
+      "type": "class",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 15
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\lstm_sentiment.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 18
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\lstm_sentiment.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 29
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\mlp_regression.py",
+      "name": "PyTorchMLPRegression",
+      "type": "class",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 9
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\mlp_regression.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 12
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\mlp_regression.py",
+      "name": "forward",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 24
+    },
+    {
+      "file": "src\\tensorflow_impl\\datasets.py",
+      "name": "create_tf_datasets",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 15
+    },
+    {
+      "file": "src\\tensorflow_impl\\train.py",
+      "name": "_create_model",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 41
+    },
+    {
+      "file": "src\\tensorflow_impl\\train.py",
+      "name": "train",
+      "type": "function",
+      "complexity": 4,
+      "rank": "A",
+      "lineno": 74
+    },
+    {
+      "file": "src\\tensorflow_impl\\train.py",
+      "name": "MLflowCallback",
+      "type": "class",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 28
+    },
+    {
+      "file": "src\\tensorflow_impl\\train.py",
+      "name": "on_epoch_end",
+      "type": "method",
+      "complexity": 3,
+      "rank": "A",
+      "lineno": 35
+    },
+    {
+      "file": "src\\tensorflow_impl\\train.py",
+      "name": "__init__",
+      "type": "method",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 31
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\cnn_cifar10.py",
+      "name": "create_cnn_cifar10",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 16
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\lstm_sentiment.py",
+      "name": "create_lstm_sentiment",
+      "type": "function",
+      "complexity": 1,
+      "rank": "A",
+      "lineno": 9
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\mlp_regression.py",
+      "name": "create_mlp_regression",
+      "type": "function",
+      "complexity": 2,
+      "rank": "A",
+      "lineno": 9
+    }
+  ],
+  "maintainability_index": [
+    {
+      "file": "src\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\analysis\\code_metrics.py",
+      "mi_score": 70.340380128025,
+      "rank": "A"
+    },
+    {
+      "file": "src\\analysis\\complexity_analysis.py",
+      "mi_score": 73.34766214518629,
+      "rank": "A"
+    },
+    {
+      "file": "src\\analysis\\test_coverage_report.py",
+      "mi_score": 66.47452478170742,
+      "rank": "A"
+    },
+    {
+      "file": "src\\analysis\\visualization.py",
+      "mi_score": 69.27767640122664,
+      "rank": "A"
+    },
+    {
+      "file": "src\\analysis\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\common\\config.py",
+      "mi_score": 72.13438905267874,
+      "rank": "A"
+    },
+    {
+      "file": "src\\common\\data_loader.py",
+      "mi_score": 72.3775549848274,
+      "rank": "A"
+    },
+    {
+      "file": "src\\common\\logging_utils.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\common\\metrics.py",
+      "mi_score": 72.66472159334778,
+      "rank": "A"
+    },
+    {
+      "file": "src\\common\\reproducibility.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\common\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "mi_score": 51.06299963130729,
+      "rank": "A"
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "mi_score": 66.13953374124534,
+      "rank": "A"
+    },
+    {
+      "file": "src\\numpy_impl\\train.py",
+      "mi_score": 62.194574005182204,
+      "rank": "A"
+    },
+    {
+      "file": "src\\numpy_impl\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+      "mi_score": 77.18016546238546,
+      "rank": "A"
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "mi_score": 65.33400747709106,
+      "rank": "A"
+    },
+    {
+      "file": "src\\numpy_impl\\models\\mlp_regression.py",
+      "mi_score": 81.2556485939123,
+      "rank": "A"
+    },
+    {
+      "file": "src\\numpy_impl\\models\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\pytorch_impl\\datasets.py",
+      "mi_score": 88.22311697663986,
+      "rank": "A"
+    },
+    {
+      "file": "src\\pytorch_impl\\train.py",
+      "mi_score": 57.57760515830188,
+      "rank": "A"
+    },
+    {
+      "file": "src\\pytorch_impl\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\cnn_cifar10.py",
+      "mi_score": 92.89074930975019,
+      "rank": "A"
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\lstm_sentiment.py",
+      "mi_score": 97.50602131349237,
+      "rank": "A"
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\mlp_regression.py",
+      "mi_score": 67.70659304195331,
+      "rank": "A"
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\tensorflow_impl\\datasets.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\tensorflow_impl\\train.py",
+      "mi_score": 63.93029496603438,
+      "rank": "A"
+    },
+    {
+      "file": "src\\tensorflow_impl\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\cnn_cifar10.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\lstm_sentiment.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\mlp_regression.py",
+      "mi_score": 73.1756852057256,
+      "rank": "A"
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\__init__.py",
+      "mi_score": 100.0,
+      "rank": "A"
+    }
+  ],
+  "raw_metrics": [
+    {
+      "file": "src\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    },
+    {
+      "file": "src\\analysis\\code_metrics.py",
+      "loc": 140,
+      "lloc": 74,
+      "sloc": 81,
+      "comments": 4,
+      "multi": 26,
+      "blank": 29
+    },
+    {
+      "file": "src\\analysis\\complexity_analysis.py",
+      "loc": 159,
+      "lloc": 68,
+      "sloc": 97,
+      "comments": 1,
+      "multi": 32,
+      "blank": 29
+    },
+    {
+      "file": "src\\analysis\\test_coverage_report.py",
+      "loc": 28,
+      "lloc": 20,
+      "sloc": 20,
+      "comments": 0,
+      "multi": 0,
+      "blank": 6
+    },
+    {
+      "file": "src\\analysis\\visualization.py",
+      "loc": 106,
+      "lloc": 69,
+      "sloc": 66,
+      "comments": 1,
+      "multi": 16,
+      "blank": 23
+    },
+    {
+      "file": "src\\analysis\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    },
+    {
+      "file": "src\\common\\config.py",
+      "loc": 130,
+      "lloc": 101,
+      "sloc": 70,
+      "comments": 4,
+      "multi": 22,
+      "blank": 32
+    },
+    {
+      "file": "src\\common\\data_loader.py",
+      "loc": 230,
+      "lloc": 82,
+      "sloc": 125,
+      "comments": 9,
+      "multi": 58,
+      "blank": 38
+    },
+    {
+      "file": "src\\common\\logging_utils.py",
+      "loc": 89,
+      "lloc": 37,
+      "sloc": 31,
+      "comments": 2,
+      "multi": 29,
+      "blank": 26
+    },
+    {
+      "file": "src\\common\\metrics.py",
+      "loc": 105,
+      "lloc": 26,
+      "sloc": 29,
+      "comments": 0,
+      "multi": 50,
+      "blank": 26
+    },
+    {
+      "file": "src\\common\\reproducibility.py",
+      "loc": 109,
+      "lloc": 50,
+      "sloc": 49,
+      "comments": 5,
+      "multi": 30,
+      "blank": 25
+    },
+    {
+      "file": "src\\common\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    },
+    {
+      "file": "src\\numpy_impl\\layers.py",
+      "loc": 269,
+      "lloc": 170,
+      "sloc": 154,
+      "comments": 5,
+      "multi": 38,
+      "blank": 66
+    },
+    {
+      "file": "src\\numpy_impl\\optimizers.py",
+      "loc": 150,
+      "lloc": 73,
+      "sloc": 76,
+      "comments": 7,
+      "multi": 31,
+      "blank": 32
+    },
+    {
+      "file": "src\\numpy_impl\\train.py",
+      "loc": 180,
+      "lloc": 98,
+      "sloc": 121,
+      "comments": 11,
+      "multi": 11,
+      "blank": 34
+    },
+    {
+      "file": "src\\numpy_impl\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    },
+    {
+      "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+      "loc": 106,
+      "lloc": 38,
+      "sloc": 49,
+      "comments": 10,
+      "multi": 29,
+      "blank": 24
+    },
+    {
+      "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+      "loc": 173,
+      "lloc": 88,
+      "sloc": 86,
+      "comments": 11,
+      "multi": 45,
+      "blank": 39
+    },
+    {
+      "file": "src\\numpy_impl\\models\\mlp_regression.py",
+      "loc": 70,
+      "lloc": 32,
+      "sloc": 34,
+      "comments": 0,
+      "multi": 19,
+      "blank": 17
+    },
+    {
+      "file": "src\\numpy_impl\\models\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    },
+    {
+      "file": "src\\pytorch_impl\\datasets.py",
+      "loc": 69,
+      "lloc": 26,
+      "sloc": 33,
+      "comments": 1,
+      "multi": 22,
+      "blank": 13
+    },
+    {
+      "file": "src\\pytorch_impl\\train.py",
+      "loc": 165,
+      "lloc": 104,
+      "sloc": 119,
+      "comments": 6,
+      "multi": 6,
+      "blank": 31
+    },
+    {
+      "file": "src\\pytorch_impl\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\cnn_cifar10.py",
+      "loc": 46,
+      "lloc": 15,
+      "sloc": 30,
+      "comments": 3,
+      "multi": 6,
+      "blank": 8
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\lstm_sentiment.py",
+      "loc": 34,
+      "lloc": 17,
+      "sloc": 19,
+      "comments": 0,
+      "multi": 6,
+      "blank": 7
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\mlp_regression.py",
+      "loc": 25,
+      "lloc": 13,
+      "sloc": 17,
+      "comments": 0,
+      "multi": 0,
+      "blank": 6
+    },
+    {
+      "file": "src\\pytorch_impl\\models\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    },
+    {
+      "file": "src\\tensorflow_impl\\datasets.py",
+      "loc": 39,
+      "lloc": 14,
+      "sloc": 17,
+      "comments": 0,
+      "multi": 14,
+      "blank": 8
+    },
+    {
+      "file": "src\\tensorflow_impl\\train.py",
+      "loc": 123,
+      "lloc": 70,
+      "sloc": 86,
+      "comments": 5,
+      "multi": 6,
+      "blank": 23
+    },
+    {
+      "file": "src\\tensorflow_impl\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\cnn_cifar10.py",
+      "loc": 33,
+      "lloc": 9,
+      "sloc": 21,
+      "comments": 4,
+      "multi": 6,
+      "blank": 5
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\lstm_sentiment.py",
+      "loc": 18,
+      "lloc": 8,
+      "sloc": 12,
+      "comments": 0,
+      "multi": 0,
+      "blank": 4
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\mlp_regression.py",
+      "loc": 19,
+      "lloc": 10,
+      "sloc": 13,
+      "comments": 0,
+      "multi": 0,
+      "blank": 4
+    },
+    {
+      "file": "src\\tensorflow_impl\\models\\__init__.py",
+      "loc": 0,
+      "lloc": 0,
+      "sloc": 0,
+      "comments": 0,
+      "multi": 0,
+      "blank": 0
+    }
+  ],
+  "summary": {
+    "avg_cyclomatic_complexity": 2.212121212121212,
+    "max_cyclomatic_complexity": 15,
+    "avg_maintainability_index": 83.55276188147118,
+    "total_sloc": 1455,
+    "total_files": 34
+  }
+}

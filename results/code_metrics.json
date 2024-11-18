@@ -1,0 +1,639 @@
+[
+  {
+    "file": "src\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\analysis\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\analysis\\code_metrics.py",
+    "total_lines": 141,
+    "n_functions": 3,
+    "n_classes": 0,
+    "n_imports": 6,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 1,
+    "torch_api_calls": 1,
+    "tf_api_calls": 1,
+    "unique_numpy_apis": [
+      "numpy_apis.keys"
+    ],
+    "unique_torch_apis": [
+      "torch_apis.keys"
+    ],
+    "unique_tf_apis": [
+      "tf_apis.keys"
+    ]
+  },
+  {
+    "file": "src\\analysis\\complexity_analysis.py",
+    "total_lines": 160,
+    "n_functions": 4,
+    "n_classes": 0,
+    "n_imports": 7,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\analysis\\test_coverage_report.py",
+    "total_lines": 29,
+    "n_functions": 1,
+    "n_classes": 0,
+    "n_imports": 5,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\analysis\\visualization.py",
+    "total_lines": 107,
+    "n_functions": 2,
+    "n_classes": 0,
+    "n_imports": 6,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 2,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.arange",
+      "np.pi"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\common\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\common\\config.py",
+    "total_lines": 131,
+    "n_functions": 3,
+    "n_classes": 5,
+    "n_imports": 6,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\common\\data_loader.py",
+    "total_lines": 231,
+    "n_functions": 5,
+    "n_classes": 0,
+    "n_imports": 10,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 8,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray",
+      "np.int64",
+      "np.array",
+      "np.float32",
+      "np.zeros",
+      "np.random.RandomState",
+      "np.int32",
+      "np.random"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\common\\logging_utils.py",
+    "total_lines": 90,
+    "n_functions": 5,
+    "n_classes": 0,
+    "n_imports": 7,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\common\\metrics.py",
+    "total_lines": 106,
+    "n_functions": 5,
+    "n_classes": 0,
+    "n_imports": 3,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 2,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray",
+      "np.sqrt"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\common\\reproducibility.py",
+    "total_lines": 110,
+    "n_functions": 2,
+    "n_classes": 0,
+    "n_imports": 9,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 2,
+    "torch_api_calls": 10,
+    "tf_api_calls": 3,
+    "unique_numpy_apis": [
+      "np.random.seed",
+      "np.random"
+    ],
+    "unique_torch_apis": [
+      "torch.__version__",
+      "torch.backends.cudnn.deterministic",
+      "torch.backends.cudnn.benchmark",
+      "torch.manual_seed",
+      "torch.cuda.is_available",
+      "torch.backends.cudnn",
+      "torch.cuda",
+      "torch.cuda.manual_seed",
+      "torch.cuda.manual_seed_all",
+      "torch.backends"
+    ],
+    "unique_tf_apis": [
+      "tf.__version__",
+      "tf.random.set_seed",
+      "tf.random"
+    ]
+  },
+  {
+    "file": "src\\numpy_impl\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\numpy_impl\\layers.py",
+    "total_lines": 270,
+    "n_functions": 28,
+    "n_classes": 8,
+    "n_imports": 3,
+    "docstring_coverage": 0.306,
+    "numpy_api_calls": 12,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray",
+      "np.random.RandomState",
+      "np.sqrt",
+      "np.zeros",
+      "np.float32",
+      "np.zeros_like",
+      "np.add.at",
+      "np.random",
+      "np.pad",
+      "np.add",
+      "np.exp",
+      "np.clip"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\numpy_impl\\models\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\numpy_impl\\models\\cnn_cifar10.py",
+    "total_lines": 107,
+    "n_functions": 5,
+    "n_classes": 1,
+    "n_imports": 4,
+    "docstring_coverage": 0.833,
+    "numpy_api_calls": 4,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray",
+      "np.exp",
+      "np.log",
+      "np.arange"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\numpy_impl\\models\\lstm_sentiment.py",
+    "total_lines": 174,
+    "n_functions": 11,
+    "n_classes": 2,
+    "n_imports": 4,
+    "docstring_coverage": 0.462,
+    "numpy_api_calls": 11,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray",
+      "np.float32",
+      "np.clip",
+      "np.random.RandomState",
+      "np.sqrt",
+      "np.zeros",
+      "np.tanh",
+      "np.zeros_like",
+      "np.random",
+      "np.exp",
+      "np.log"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\numpy_impl\\models\\mlp_regression.py",
+    "total_lines": 71,
+    "n_functions": 5,
+    "n_classes": 1,
+    "n_imports": 3,
+    "docstring_coverage": 0.333,
+    "numpy_api_calls": 1,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\numpy_impl\\optimizers.py",
+    "total_lines": 151,
+    "n_functions": 7,
+    "n_classes": 2,
+    "n_imports": 3,
+    "docstring_coverage": 0.778,
+    "numpy_api_calls": 3,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray",
+      "np.zeros_like",
+      "np.sqrt"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\numpy_impl\\train.py",
+    "total_lines": 181,
+    "n_functions": 5,
+    "n_classes": 0,
+    "n_imports": 13,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 6,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray",
+      "np.arange",
+      "np.random.shuffle",
+      "np.random",
+      "np.int64",
+      "np.mean"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\pytorch_impl\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\pytorch_impl\\datasets.py",
+    "total_lines": 70,
+    "n_functions": 2,
+    "n_classes": 0,
+    "n_imports": 4,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 1,
+    "torch_api_calls": 1,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray"
+    ],
+    "unique_torch_apis": [
+      "torch.from_numpy"
+    ],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\pytorch_impl\\models\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\pytorch_impl\\models\\cnn_cifar10.py",
+    "total_lines": 47,
+    "n_functions": 2,
+    "n_classes": 1,
+    "n_imports": 3,
+    "docstring_coverage": 0.667,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 8,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [
+      "nn.Module",
+      "torch.Tensor",
+      "nn.Sequential",
+      "nn.Conv2d",
+      "nn.ReLU",
+      "nn.MaxPool2d",
+      "nn.Flatten",
+      "nn.Linear"
+    ],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\pytorch_impl\\models\\lstm_sentiment.py",
+    "total_lines": 35,
+    "n_functions": 2,
+    "n_classes": 1,
+    "n_imports": 3,
+    "docstring_coverage": 0.667,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 6,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [
+      "nn.Module",
+      "torch.Tensor",
+      "nn.Embedding",
+      "nn.LSTM",
+      "nn.Linear",
+      "torch.sigmoid"
+    ],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\pytorch_impl\\models\\mlp_regression.py",
+    "total_lines": 26,
+    "n_functions": 2,
+    "n_classes": 1,
+    "n_imports": 3,
+    "docstring_coverage": 0.333,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 5,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [
+      "nn.Module",
+      "torch.Tensor",
+      "nn.Sequential",
+      "nn.Linear",
+      "nn.ReLU"
+    ],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\pytorch_impl\\train.py",
+    "total_lines": 166,
+    "n_functions": 3,
+    "n_classes": 0,
+    "n_imports": 15,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 4,
+    "torch_api_calls": 12,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [
+      "np.ndarray",
+      "np.concatenate",
+      "numpy",
+      "np.mean"
+    ],
+    "unique_torch_apis": [
+      "nn.Module",
+      "torch.Tensor",
+      "torch.device",
+      "torch.optim.Adam",
+      "nn.CrossEntropyLoss",
+      "torch.no_grad",
+      "torch.optim",
+      "torch.save",
+      "nn.BCELoss",
+      "torch.cuda.is_available",
+      "nn.MSELoss",
+      "torch.cuda"
+    ],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\tensorflow_impl\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\tensorflow_impl\\datasets.py",
+    "total_lines": 40,
+    "n_functions": 2,
+    "n_classes": 0,
+    "n_imports": 3,
+    "docstring_coverage": 0.5,
+    "numpy_api_calls": 1,
+    "torch_api_calls": 0,
+    "tf_api_calls": 4,
+    "unique_numpy_apis": [
+      "np.ndarray"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": [
+      "tf.data.Dataset",
+      "tf.data.Dataset.from_tensor_slices",
+      "tf.data.AUTOTUNE",
+      "tf.data"
+    ]
+  },
+  {
+    "file": "src\\tensorflow_impl\\models\\__init__.py",
+    "total_lines": 1,
+    "n_functions": 0,
+    "n_classes": 0,
+    "n_imports": 0,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 0,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": []
+  },
+  {
+    "file": "src\\tensorflow_impl\\models\\cnn_cifar10.py",
+    "total_lines": 34,
+    "n_functions": 1,
+    "n_classes": 0,
+    "n_imports": 4,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 6,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": [
+      "keras.Model",
+      "keras.Sequential",
+      "layers.Conv2D",
+      "layers.MaxPooling2D",
+      "layers.Flatten",
+      "layers.Dense"
+    ]
+  },
+  {
+    "file": "src\\tensorflow_impl\\models\\lstm_sentiment.py",
+    "total_lines": 19,
+    "n_functions": 1,
+    "n_classes": 0,
+    "n_imports": 3,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 5,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": [
+      "keras.Model",
+      "keras.Sequential",
+      "layers.Embedding",
+      "layers.LSTM",
+      "layers.Dense"
+    ]
+  },
+  {
+    "file": "src\\tensorflow_impl\\models\\mlp_regression.py",
+    "total_lines": 20,
+    "n_functions": 1,
+    "n_classes": 0,
+    "n_imports": 3,
+    "docstring_coverage": 1.0,
+    "numpy_api_calls": 0,
+    "torch_api_calls": 0,
+    "tf_api_calls": 4,
+    "unique_numpy_apis": [],
+    "unique_torch_apis": [],
+    "unique_tf_apis": [
+      "keras.Model",
+      "keras.Sequential",
+      "layers.Input",
+      "layers.Dense"
+    ]
+  },
+  {
+    "file": "src\\tensorflow_impl\\train.py",
+    "total_lines": 124,
+    "n_functions": 4,
+    "n_classes": 1,
+    "n_imports": 14,
+    "docstring_coverage": 0.6,
+    "numpy_api_calls": 1,
+    "torch_api_calls": 0,
+    "tf_api_calls": 7,
+    "unique_numpy_apis": [
+      "np.int64"
+    ],
+    "unique_torch_apis": [],
+    "unique_tf_apis": [
+      "keras.callbacks.Callback",
+      "keras.Model",
+      "keras.callbacks",
+      "keras.optimizers.Adam",
+      "keras.losses.SparseCategoricalCrossentropy",
+      "keras.optimizers",
+      "keras.losses"
+    ]
+  }
+]
