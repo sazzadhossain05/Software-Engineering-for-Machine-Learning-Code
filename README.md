@@ -31,11 +31,11 @@ All 9 experiments were run and results are committed to the `results/` folder.
 
 | Task | NumPy | PyTorch | TensorFlow |
 |------|-------|---------|------------|
-| Regression (R²) | 0.781 | 0.784 | **0.795** |
-| CIFAR-10 (Accuracy) | 56.75% | **70.38%** | 68.57% |
-| Sentiment (Accuracy) | 50.00% ⚠️ | 50.28% ⚠️ | **83.72%** |
+| Regression (R2) | 0.781 | 0.784 | 0.795 (best) |
+| CIFAR-10 (Accuracy) | 56.75% | 70.38% (best) | 68.57% |
+| Sentiment (Accuracy) | 50.00% (failed - vanishing gradient) | 50.28% (failed - overfitting) | 83.72% (best) |
 
-> ⚠️ NumPy LSTM suffers from vanishing gradients; PyTorch LSTM overfits. TensorFlow's built-in LSTM handles long sequences significantly better.
+Note on Sentiment results: The NumPy LSTM implementation fails to learn due to vanishing gradients during backpropagation through time. The PyTorch LSTM memorizes training data but completely fails on unseen data due to severe overfitting. TensorFlow's built-in LSTM implementation handles long sequences significantly better, achieving 83.72% accuracy.
 
 ### SE Metric Results
 
@@ -45,7 +45,7 @@ All 9 experiments were run and results are committed to the `results/` folder.
 | Average Maintainability Index | 83.55 |
 | Total Source Lines of Code | 1,455 |
 | Total Files Analyzed | 34 |
-| Test Suite | 55 tests, 41% coverage |
+| Test Suite | 55 tests passed, 41% coverage |
 
 ## Repository Structure
 
@@ -100,7 +100,7 @@ make mlflow
 
 ## Quick Start (Windows — Git Bash)
 
-`make` is not available on Windows. Use the following equivalent commands instead.
+The `make` command is not available on Windows. Use the following equivalent commands instead.
 
 ### Step 1 — Clone and navigate
 
@@ -126,10 +126,9 @@ pip install radon pytest-cov
 
 ### Step 3 — Download datasets (Windows SSL fix)
 
-On Windows, scikit-learn may fail to download datasets due to SSL certificate issues. Run this once to pre-download all datasets:
+On Windows, scikit-learn may fail to download datasets due to SSL certificate issues. Run this once to pre-download the California Housing dataset:
 
 ```bash
-# Fix SSL and download California Housing (regression)
 python -c "
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -139,32 +138,11 @@ print('California Housing downloaded successfully')
 "
 ```
 
-CIFAR-10 and IMDb are downloaded automatically on first run via torchvision/keras.
+CIFAR-10 and IMDb datasets are downloaded automatically on first run via torchvision and keras respectively.
 
 ### Step 4 — Run experiments
 
-**NumPy experiments:**
-```bash
-python -m src.numpy_impl.train --config configs/regression_numpy.yaml
-python -m src.numpy_impl.train --config configs/cifar10_numpy.yaml
-python -m src.numpy_impl.train --config configs/sentiment_numpy.yaml
-```
-
-**PyTorch experiments:**
-```bash
-python -m src.pytorch_impl.train --config configs/regression_pytorch.yaml
-python -m src.pytorch_impl.train --config configs/cifar10_pytorch.yaml
-python -m src.pytorch_impl.train --config configs/sentiment_pytorch.yaml
-```
-
-**TensorFlow experiments:**
-```bash
-python -m src.tensorflow_impl.train --config configs/regression_tensorflow.yaml
-python -m src.tensorflow_impl.train --config configs/cifar10_tensorflow.yaml
-python -m src.tensorflow_impl.train --config configs/sentiment_tensorflow.yaml
-```
-
-> **Note for TensorFlow on Windows:** TensorFlow >= 2.11 does not support GPU on native Windows. CPU-only training will be used automatically. GPU support is available via WSL2.
+See the full **Reproducing Experimental Results** section below for all 9 experiment commands with expected outputs.
 
 ### Step 5 — Run tests
 
@@ -172,12 +150,12 @@ python -m src.tensorflow_impl.train --config configs/sentiment_tensorflow.yaml
 pytest tests/ -v --cov=src --cov-report=json:results/coverage_report.json --cov-report=term-missing -m "not slow"
 ```
 
-Expected output: **55 tests passed**, 41% coverage.
+Expected output: 55 tests passed, 41% overall coverage.
 
 ### Step 6 — Run SE analysis
 
 ```bash
-# Code metrics (lines of code, functions, classes)
+# Code metrics (lines of code, functions, classes per file)
 python -m src.analysis.code_metrics --target src --output results/code_metrics.json
 
 # Cyclomatic complexity and maintainability index
@@ -232,6 +210,80 @@ mlflow ui --port 5000
 
 Then open your browser at `http://localhost:5000` to view all experiment runs, metrics, and parameters.
 
+## Reproducing Experimental Results
+
+All 9 experiments can be reproduced using the commands below. Datasets are downloaded automatically on first run. All results are logged to MLflow automatically.
+
+Note: TensorFlow model saving requires Keras 3 compatibility. The fix is already applied in `src/tensorflow_impl/train.py` (model saved with `.keras` extension).
+
+---
+
+### NumPy Experiments
+
+**Regression — California Housing**
+```bash
+python -m src.numpy_impl.train --config configs/regression_numpy.yaml
+```
+Expected result: RMSE = 0.540, R2 = 0.781. Training runs for 100 epochs at approximately 0.1 seconds per epoch. The California Housing dataset is downloaded automatically via scikit-learn on first run. On Windows, run the SSL fix in Step 3 first before running this command.
+
+**Image Classification — CIFAR-10**
+```bash
+python -m src.numpy_impl.train --config configs/cifar10_numpy.yaml
+```
+Expected result: Accuracy = 56.75%, F1 = 0.561. Training runs for 50 epochs at approximately 100 seconds per epoch. Note that this experiment takes approximately 90 minutes to complete. CIFAR-10 (170MB) is downloaded automatically via torchvision on first run, which requires PyTorch to be installed even when running the NumPy implementation.
+
+**Sentiment Analysis — IMDb**
+```bash
+python -m src.numpy_impl.train --config configs/sentiment_numpy.yaml
+```
+Expected result: Accuracy = 49.99%, which is effectively random guessing. Training runs for 10 epochs at approximately 75 seconds per epoch. The NumPy LSTM implementation suffers from vanishing gradients and fails to learn. The loss remains stuck at 0.6931 (ln(2)) throughout all epochs, meaning the model outputs 50/50 probability for every prediction regardless of input.
+
+---
+
+### PyTorch Experiments
+
+**Regression — California Housing**
+```bash
+python -m src.pytorch_impl.train --config configs/regression_pytorch.yaml
+```
+Expected result: RMSE = 0.537, R2 = 0.784. Training runs for 100 epochs at approximately 0.6 seconds per epoch.
+
+**Image Classification — CIFAR-10**
+```bash
+python -m src.pytorch_impl.train --config configs/cifar10_pytorch.yaml
+```
+Expected result: Accuracy = 70.38%, F1 = 0.705. Training runs for 50 epochs at approximately 25 seconds per epoch. This is the best CIFAR-10 result across all three frameworks.
+
+**Sentiment Analysis — IMDb**
+```bash
+python -m src.pytorch_impl.train --config configs/sentiment_pytorch.yaml
+```
+Expected result: Accuracy = 50.28%, which is effectively random guessing. Training runs for 10 epochs. Warning: each epoch takes approximately 10 to 13 minutes, so this experiment takes approximately 2 hours to complete. The PyTorch LSTM severely overfits — training loss drops to near zero (0.0008) while validation loss explodes to 3.40, indicating the model memorizes training data but cannot generalize to unseen reviews.
+
+---
+
+### TensorFlow Experiments
+
+**Regression — California Housing**
+```bash
+python -m src.tensorflow_impl.train --config configs/regression_tensorflow.yaml
+```
+Expected result: RMSE = 0.523, R2 = 0.795. Training runs for 100 epochs at approximately 1 second per epoch. This is the best regression result across all three frameworks.
+
+**Image Classification — CIFAR-10**
+```bash
+python -m src.tensorflow_impl.train --config configs/cifar10_tensorflow.yaml
+```
+Expected result: Accuracy = 68.57%, F1 = 0.683. Training runs for 50 epochs at approximately 12 seconds per epoch. CIFAR-10 (170MB) is downloaded automatically via keras on first run.
+
+**Sentiment Analysis — IMDb**
+```bash
+python -m src.tensorflow_impl.train --config configs/sentiment_tensorflow.yaml
+```
+Expected result: Accuracy = 83.72%, F1 = 0.837. Training runs for 10 epochs at approximately 2 minutes per epoch, so approximately 20 minutes total. This is by far the best sentiment result across all three frameworks, demonstrating TensorFlow's superior built-in LSTM implementation for handling long text sequences without vanishing gradient issues.
+
+---
+
 ## SE Metrics Collected
 
 | Metric | Tool | Purpose |
@@ -260,20 +312,18 @@ Then open your browser at `http://localhost:5000` to view all experiment runs, m
 All experiments use fixed random seeds (seed=42) and deterministic configurations. Every experiment logs parameters, metrics, and artifacts to MLflow automatically.
 
 ```bash
-# Run a specific experiment
-python -m src.pytorch_impl.train --config configs/cifar10_pytorch.yaml
-
-# View results in MLflow UI
+# View all experiment results in MLflow UI
 mlflow ui --port 5000
 ```
 
 ## Key Findings
 
-1. **TensorFlow dominates NLP** — 83.72% sentiment accuracy vs 50% for NumPy and PyTorch, due to superior built-in LSTM implementation handling vanishing gradients
-2. **PyTorch leads image classification** — 70.38% CIFAR-10 accuracy, slightly ahead of TensorFlow (68.57%) and significantly ahead of NumPy (56.75%)
-3. **All frameworks converge for regression** — R² scores within 1.4% of each other (0.781–0.795), suggesting framework choice matters less for simple tabular tasks
-4. **NumPy is prohibitively slow for complex tasks** — 100s per epoch for CIFAR-10 vs 25s (PyTorch) and 12s (TensorFlow)
-5. **Code maintainability is high** — Average maintainability index of 83.55/100 across all implementations
+1. **TensorFlow dominates NLP tasks** — 83.72% sentiment accuracy versus 50% for both NumPy and PyTorch, due to its superior built-in LSTM implementation that effectively handles vanishing gradients in long text sequences.
+2. **PyTorch leads image classification** — 70.38% CIFAR-10 accuracy, slightly ahead of TensorFlow (68.57%) and significantly ahead of NumPy (56.75%).
+3. **All frameworks converge for regression** — R2 scores within 1.4% of each other (0.781 to 0.795), suggesting framework choice matters less for simple tabular tasks.
+4. **NumPy is prohibitively slow for complex tasks** — approximately 100 seconds per epoch for CIFAR-10 versus 25 seconds for PyTorch and 12 seconds for TensorFlow.
+5. **Code maintainability is high across all implementations** — average maintainability index of 83.55 out of 100.
+6. **Pure NumPy LSTM implementations are not viable for production NLP** — vanishing gradients prevent learning entirely, confirming the value of framework-level automatic differentiation.
 
 ## License
 
